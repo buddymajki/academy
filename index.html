@@ -1,345 +1,68 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>
-
+    <head>
  
-        <title>FLYwithMIKI - Paragliding Accessories</title>
+        <title>Swiss Paragliding Academy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-        <meta name="description" content="FLYwithMIKI - sadasdasd">
+        <meta name="description" content="FLYwithMIKI - Check our daily program, where do we fly, what are the plans for the following days and weeks">
 
-        <meta property="og:url" content="https://flywithmiki.com" />
+        <meta property="og:url" content="https://paragliding.academy" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="FLYwithMIKI - Dasdasdasd" />
-        <meta property="og:description" content="asdasdasd" />
-        <meta property="og:image" content="https://flywithmiki.com/Images_v2/12.webp" />
+        <meta property="og:title" content="Swiss Paragliding Academy - Daily program in our paragliding school" />
+        <meta property="og:description" content="Improve your skills and join our Paragliding Academy" />
+        <!-- <meta property="og:image" content="https://flywithmiki.com/Images_v2/12.webp" /> -->
 
         <link rel="icon" type="image/x-icon" href="https://flywithmiki.com/Images_v2/favicon.ico">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" font-display: "swap;">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" font-display: "swap;">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="shop.css">
-
-
-
-</head> 
-
-
-
-<body class="w3-content">
-
-
- <div class="header" style="max-width:1000px; margin:auto" id="head">
-     <img src="https://flywithmiki.com/Images_v2/logo1.webp" alt="logoc" style="width:100%; max-width:500px">
-     <br><h1 class="w3-center">Paragliding Accessories</h1>  
- </div>
-
-
-
-<!-- MENU----------------------------->
-<div id="menu-container" style="  position: sticky;  top: 0;  min-height: 42px;  z-index: 1000;"></div>
-
-
-<script>
-  // Load menu.html into the div with the ID 'menu-container'
-  fetch('menu.html')
-    .then(response => response.text())
-    .then(data => {
-      // Insert the menu content into the container
-      document.getElementById('menu-container').innerHTML = data;
-
-      // After loading the menu, initialize event listeners
-      initializeMenu();
-    })
-    .catch(error => console.error('Error loading menu.html:', error));
-
-  // Initialize event listeners for the menu
-  function initializeMenu() {
-    // Find the hamburger icon and attach the event listener for mobile toggle
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    if (hamburgerIcon) {
-      hamburgerIcon.addEventListener('click', myFunction);
-    }
-  }
-
-  // Function to toggle the responsive menu
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";  // Add 'responsive' class to show menu in mobile view
-    } else {
-      x.className = "topnav";  // Remove 'responsive' class to hide menu
-    }
-  }
-</script>
-
-
-
-<!-- MENU----------------------------->
-
-
-
-
-<div class="w3-container w3-section w3-white w3-text-black w3-center w3-padding w3-margin-top" style="max-width:1000px; margin:auto" id="intro">
-  <p class=" w3-justify w3-margin" >At FLYwithMIKI, we are committed to safety and responsible paragliding practices. While many webshops sell paragliding equipment without knowing their customers, we believe this approach overlooks the importance of proper guidance. Choosing the right glider, harness, or reserve parachute requires an expert assessment of your skills, experience, and flying style. That’s why we only offer books and accessories online, while all paragliding equipment purchases are handled personally. If you're looking for a new glider or harness, contact us directly—we take the time to ensure you get the best gear tailored to your needs.</p>
-</div>
-
-<!-- PRODUCTS ------------------------------------------------>
-
-<div id="products-container" class="w3-row-padding"></div>
-
-<script src="products.js"></script>
-
-
-<!-- PRODUCTS ------------------------------------------------>
-
-
-<!-- Basket Section -->
-<div class="basket w3-card w3-white w3-responsive w3-hover-opacity-off"" style="max-width:600px; margin:auto" id="basket-container">
-    <div id="basket-content" style="display: none; overflow-x: auto;">
-        <h4>Items</h4>
-        <div style="overflow-x: auto;">
-            <table class="w3-table w3-bordered w3-small w3-center" style="max-width:100%; min-width: 320px; margin:auto;">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Pcs.</th>
-                        <th>Price</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="basket-list"></tbody>
-            </table>
-        </div>
-        <p id="shipping-options" style="display: none;">
-            <label>
-                <input type="radio" name="shipping" value="0" onchange="updateShipping(0)" checked> Personal Pickup (Free)
-            </label>
-            <br>
-            <label>
-                <input type="radio" name="shipping" value="9" onchange="updateShipping(9)"> Shipping (+9 CHF)
-            </label>
-        </p>
-        <p><strong>Total:</strong> <span id="basket-total">0</span> CHF</p>
-        <button class="w3-button w3-blue" onclick="showCheckoutForm()">ORDER</button>
         
-        <!-- Checkout Form -->
-        <div id="checkout-form" style="display: none; margin-top: 20px;">
-            <h4>Checkout</h4>
-            <form onsubmit="submitOrder(event)">
-                <label>Name:</label>
-                <input class="w3-input w3-border" type="text" id="customer-name" required>
-                <label>Email:</label>
-                <input class="w3-input w3-border" type="email" id="customer-email" required>
-                <label>Address:</label>
-                <textarea class="w3-input w3-border" id="customer-address" required></textarea>
-                <p><strong>Order Summary:</strong></p>
-                <p id="order-summary"></p>
-                <button class="w3-button w3-green" type="submit">Submit Order</button>
-            </form>
-        </div>
-    </div>
+        <style>
+            html {scroll-behavior: smooth;}
+             body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+       //pricing tablehez
+       
+        .w3-table td, .w3-table th {
+            text-align: center;
+        }
+        .checkmark {
+            color: green;
+            font-size: 1.5em;
+        }
+        .crossmark {
+            color: red;
+            font-size: 1.5em;
+        }
+        .highlight {
+            background-color: #f1f1f1;
+        }
+         //pricing tablehez
+
+
+        </style>
+
+
+
+    </head> 
+
+
+
+<body class="w3-white w3-content" style="max-width:1600px">
+
+
+<!-- INTRO section -------------------------------------------------------------------------------------------------------------->
+
+
+ <div class="w3-container w3-white w3-center w3-padding-32" id="prices">
+        <img src="https://paragliding.academy/img/logo.png" alt="logo" style="width:100%; max-width:400px"> <!--LOGO -->
+        
+<br><br>
+        <h1 class="w3-jumbo">COMING SOON</h1>
 </div>
-
-<!-- BASKETSCRIPT -->
-<script>
-    let basket = [];
-    let shippingCost = 0;
-
-    function saveBasketToLocalStorage() {
-        localStorage.setItem("basket", JSON.stringify(basket));
-    }
-
-    function loadBasketFromLocalStorage() {
-        const storedBasket = localStorage.getItem("basket");
-        if (storedBasket) {
-            basket = JSON.parse(storedBasket);
-            updateBasketUI();
-        }
-    }
-
-    function addToBasket(product, price) {
-        const existingItem = basket.find(item => item.product === product);
-        if (existingItem) {
-            existingItem.quantity++;
-        } else {
-            basket.push({ product, price, quantity: 1 });
-        }
-        saveBasketToLocalStorage();
-        updateBasketUI();
-    }
-
-    function updateItemQuantity(product, change) {
-        const item = basket.find(item => item.product === product);
-        if (item) {
-            item.quantity += change;
-            if (item.quantity <= 0) {
-                removeItemCompletely(product);
-            }
-        }
-        saveBasketToLocalStorage();
-        updateBasketUI();
-    }
-
-    function removeItemCompletely(product) {
-        basket = basket.filter(item => item.product !== product);
-        saveBasketToLocalStorage();
-        updateBasketUI();
-    }
-
-function updateBasketUI() {
-    const basketList = document.getElementById('basket-list');
-    const basketTotal = document.getElementById('basket-total');
-    const basketCount = document.getElementById('basket-count');
-    const shippingOptions = document.getElementById('shipping-options');
-    const orderSummary = document.getElementById('order-summary');
-
-    basketList.innerHTML = "";
-    let total = 0;
-    let itemCount = 0;
-    let summaryText = "";
-
-    basket.forEach(item => {
-        total += item.price * item.quantity;
-        itemCount += item.quantity; // Count total number of items
-        summaryText += `${item.quantity}x ${item.product} - ${item.price * item.quantity} CHF\n`;
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${item.product}</td>
-            <td>${item.quantity}</td>
-            <td>${item.price} CHF</td>
-            <td>
-                <button class="w3-hover-opacity w3-hover-green w3-tiny w3-light-grey" onclick="updateItemQuantity('${item.product}', 1)">+</button>
-                <button class="w3-hover-opacity w3-hover-orange  w3-tiny w3-light-grey" onclick="updateItemQuantity('${item.product}', -1)">-</button>
-                <button class="w3-hover-opacity w3-hover-red  w3-tiny w3-light-grey" onclick="removeItemCompletely('${item.product}')">X</button>
-            </td>
-        `;
-        basketList.appendChild(row);
-    });
-
-    basketTotal.textContent = total + shippingCost;
-    orderSummary.textContent = summaryText + `Shipping: ${shippingCost} CHF\nTotal: ${total + shippingCost} CHF`;
-    shippingOptions.style.display = basket.length > 0 ? "block" : "none";
-
-    // Update basket count and color
-    basketCount.textContent = itemCount;
-    basketCount.className = itemCount > 0 ? "w3-badge w3-red" : "w3-badge w3-gray";
-}
-
-
-    function toggleBasket() {
-        const basketContent = document.getElementById('basket-content');
-        const toggleIcon = document.getElementById('basket-toggle-icon');
-
-        if (basketContent.style.display === "none") {
-            basketContent.style.display = "block";
-            toggleIcon.textContent = "Hide";
-        } else {
-            basketContent.style.display = "none";
-            toggleIcon.textContent = "View";
-        }
-    }
-
-    function updateShipping(cost) {
-        shippingCost = cost;
-        updateBasketUI();
-    }
-
-    function showCheckoutForm() {
-        document.getElementById('checkout-form').style.display = "block";
-    }
-
-function submitOrder(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('customer-name').value;
-    const email = document.getElementById('customer-email').value;
-    const address = document.getElementById('customer-address').value;
-    const orderSummary = document.getElementById('order-summary').textContent;
-
-    const formData = {
-        name: name,
-        email: email,
-        address: address,
-        order: orderSummary
-    };
-
-    fetch("https://formspree.io/f/mkgobzqg", { // Replace with your Formspree form ID
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-    }).then(response => {
-        if (response.ok) {
-            alert("Thanks for your order, we will send you the payment link shortly to your email");
-            basket = [];
-            saveBasketToLocalStorage();
-            updateBasketUI();
-            document.getElementById('checkout-form').reset();
-        } else {
-            alert("Error sending order. Please try again.");
-        }
-    });
-}
-    document.addEventListener("DOMContentLoaded", loadBasketFromLocalStorage);
-</script>
-<!-- BASKETSCRIPT -->
-
-
-
-<!-- Product szín választó -->
-<script>
-function addToBasketWithColor(productName, price, colorGroupName) {
-  let selectedColor = document.querySelector(`input[name="${colorGroupName}"]:checked`).value;
-  addToBasket(`${productName} - ${selectedColor}`, price);
-}
-</script>
-<!-- Product szín választó -->
-
-
-<!-- DROPDOWN kiolvassa a kategóriákat a products.json-ból -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("products.json")
-                .then(response => response.json())
-                .then(data => {
-                    const categoryContainer = document.getElementById("categoryList");
-                    categoryContainer.innerHTML = ""; // Clear previous content
-
-                    Object.keys(data).forEach(category => {
-                        const formattedCategory = category.charAt(0).toUpperCase() + category.slice(1);
-                        const categoryElement = document.createElement("a");
-                        categoryElement.textContent = formattedCategory;
-                        categoryElement.href = `./#${category.toLowerCase()}`; // Link to category section
-                        categoryContainer.appendChild(categoryElement);
-                    });
-                })
-                .catch(error => console.error("Error loading products:", error));
-        });
-    </script>
-<!-- DROPDOWN kiolvassa a kategóriákat a products.json-ból -->
-
-
-
-<!------------------------FOOTER------------------------------------->
- <div id="footer"></div>
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer').innerHTML = data;
-    });
-</script>
-<!------------------------FOOTER------------------------------------->
-
-
-
-
-
 
 
 </body>
 
-</html>	
+</html>
