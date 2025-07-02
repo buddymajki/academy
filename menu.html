@@ -1,0 +1,117 @@
+header {
+  background-color: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.nav-links li:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1001;
+}
+
+.submenu li a {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .nav-links.open {
+    max-height: 1000px; /* sufficiently large for all links */
+  }
+  .nav-links li {
+    width: 100%;
+  }
+  .nav-links li .submenu {
+    position: static;
+  }
+}
+
+
+<header>
+  <nav class="navbar">
+    <div class="logo">FLYwithMIKI</div>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Academy Yearly Plan</a></li>
+      <li><a href="#">PTP Personalized Training</a></li>
+      <li class="has-submenu">
+        <a href="#">Equipment Reviews</a>
+        <ul class="submenu">
+          <li><a href="#">Paragliders</a></li>
+          <li><a href="#">Harnesses</a></li>
+          <li><a href="#">Varios & Instruments</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Our Coaches</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pricing & Packages</a></li>
+      <li><a href="#">Club & Community</a></li>
+      <li><a href="#">Safety & Risk Management</a></li>
+      <li><a href="#">Contact / Booking</a></li>
+    </ul>
+  </nav>
+</header>
