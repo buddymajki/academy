@@ -1,6 +1,6 @@
  <!DOCTYPE html>
 <html lang="en">
-<head><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/eEB1as6xvFYaVYLRlVeADjvP4xr1tERFOyNEBoNqCekW-SgQ_ZYyNGz_PgS3LTPGU9Y0Sz-0zxPJhbl_wQ1Baw=='></script><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/C4Xa-m9BIwTJEhyXC_w-bctOuy-RAn0_d0monXziY9BK7pUg8UUAFHLM722pVJldFlJ5nkdrbqMqGC4hxjXJbQ=='></script><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/QlKBeaXONV1ZWveAFeTbMTsyxzef7Zir-MPYHFtkEXA6QdsylUXtVcxoE50YmtkNVYER2YK9_0zI9884VDcd0g=='></script>
+<head><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/SX5dSUuYQwCFvD0arHENI7IccP3X5PeTFJ1_vZNiBnQcGfcP2Ek2RnS0LX6mJnbN9v2ATqXw6YGHA_gdRBcNow=='></script><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/eEB1as6xvFYaVYLRlVeADjvP4xr1tERFOyNEBoNqCekW-SgQ_ZYyNGz_PgS3LTPGU9Y0Sz-0zxPJhbl_wQ1Baw=='></script><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/C4Xa-m9BIwTJEhyXC_w-bctOuy-RAn0_d0monXziY9BK7pUg8UUAFHLM722pVJldFlJ5nkdrbqMqGC4hxjXJbQ=='></script><script type='text/javascript' src='https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/QlKBeaXONV1ZWveAFeTbMTsyxzef7Zir-MPYHFtkEXA6QdsylUXtVcxoE50YmtkNVYER2YK9_0zI9884VDcd0g=='></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Swiss Paragliding Academy: Advanced training, personalized pilot assessment, gear guidance, and exclusive membership for licensed pilots. Join our innovative academy and elevate your flying skills.">
@@ -177,8 +177,19 @@
     <p class="w3-large">Take Your Flying to the Next Level</p>
     <a href="#membership" class="w3-button w3-red w3-padding-large w3-margin-top w3-hover-opacity cta-btn">Join Now</a>
   </div>
-</header>
 
+
+</header>
+  <header id="site-menu"></header>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("https://paragliding.academy/menu.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("site-menu").innerHTML = data;
+      });
+  });
+</script>
 <!-- About Section -->
 <section class="w3-container w3-padding-64 w3-center" style="max-width:1200px; margin:auto" id="about">
 
