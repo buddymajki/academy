@@ -65,8 +65,8 @@
 
 <!-- Page Content -->
 
-<section id="home" style="padding-top: 60px;">
-<div class='w3-main w3-center' style='max-width: 1500px; margin:auto;'>
+
+<div id="home" class='w3-main w3-center' style='max-width: 1500px; margin:auto; padding-top: 0px;">'>
 
 
 
@@ -97,13 +97,13 @@
 
   </div>
 
-</Section>
+
 
 
 		
 <!-- CONCEPT SECTION NEW ----------------------------------------------------------------------->
-<section id="concept" >		
-<div style="margin-top: -2px; background-color: #282A35;">
+		
+<div id="concept" style="margin-top: -2px; background-color: #282A35;">
   <div style="padding:40px 25px 120px 25px;position:relative;">
 
     <div class="w3-center">
@@ -168,7 +168,7 @@
 	
   </div>
 </div>
-</Section>
+
 <!-- CONCEPT SECTION END ----------------------------------------------------------------------->	
 		
 		
@@ -182,11 +182,9 @@
 
 
 <!-- SUBSCRIPTIONS    BEGINNNING---------------------------------------------------- -->
-<section id="membership">  
- <div class="w3s-subscription-plans 	 w3-center">
-        <div
-  id="plans-section"
-  class="w3-center plans-section"
+
+<div id="membership" class="w3s-subscription-plans w3-center">
+        <div  class="w3-center plans-section"
 >
   <!-- Plan Header -->
   <div class="plans-header">
@@ -421,7 +419,7 @@
 </div>
 	
 </div>
-</section>
+
 <!-- SUBSCRIPTIONS    END---------------------------------------------------- -->
 
 
@@ -430,7 +428,7 @@
 
 
 <!-- Schedule Section -->
-<section id="schedule" style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: white; padding: 80px 25px;">
+<div id="schedule" style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: white; padding: 80px 25px;">
   <div class="w3-content" style="max-width:1200px;">
     <div class="w3-center">
       <h2 style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">📅 Yearly Program</h2>
@@ -549,7 +547,7 @@
 	
   </div>
   
-</section>
+</div>
 
 
  
@@ -564,8 +562,8 @@
 
 
 <!-- PARTNERS BEGIN ----------------------------------------------------------------------->
-<section id="partners">
-<div class="domain-section w3-center" style="margin-top: -30px; background-color:#28665d; padding-bottom: 80px; z-index: 2 !important;" >
+
+<div id="partners" class="domain-section w3-center" style="margin-top: -30px; background-color:#28665d; padding-bottom: 80px; z-index: 2 !important;" >
 
 
 <div style="padding:40px 25px 120px 25px;position:relative;">
@@ -622,7 +620,7 @@
 
 
  </div>
- </section>
+ 
 <!--PARTNERS END ----------------------------------------------------------------------->
 
 <div class="w3-center w3-hide-small" style="background-color: #202020"> <!-- w3subscriptionplans section background color -->
@@ -634,8 +632,8 @@
 
 
 <!--YOUTUBE SECTION-------------------->
-<section id="youtube">
-<div class="w3-center" style="background-color: #202020; padding-top:50px; padding-bottom:50px;">
+
+<div id="youtube" class="w3-center" style="background-color: #202020; padding-top:50px; padding-bottom:50px;">
     <div class="w3-content w3-row-padding">
         <div class="w3-row w3-container w3-center">
             <div class="w3-col l6 w3-padding">
@@ -659,7 +657,7 @@
         </div>
     </div>
 </div>
-</section>
+
 <!--YOUTUBE SECTION-------------------->
 		
 
@@ -673,8 +671,8 @@
 
 
 <!---FAQ---------------------------------------------------------------->
-<section id="faq">
- <div class="w3-center" style="background-color: #282A35; padding-top:50px; padding-bottom:50px;">
+
+ <div id="faq" class="w3-center" style="background-color: #282A35; padding-top:50px; padding-bottom:50px;">
   <div class="w3-center">
     <div class="faq w3-center w3-content">
       <h2 style="color: #ffc0c7;"><b>Frequently Asked Questions</b></h2><br>
@@ -890,7 +888,7 @@ function closeNav() {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const allNavLinks = document.querySelectorAll(".topnav a[href^='#'], .overlay-content a[href^='#']");
-  const sections = Array.from(document.querySelectorAll("section[id]"));
+  const sections = Array.from(document.querySelectorAll("div[id]"));
 
   function activateLinkById(id) {
     allNavLinks.forEach(link => {
