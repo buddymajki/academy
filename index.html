@@ -25,6 +25,7 @@
 <link rel="preload" href="https://www.w3schools.com//lib/fonts/SourceSansPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="https://www.w3schools.com//lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
 <link rel="stylesheet" href="https://www.w3schools.com//lib/w3schools.css?v=1.0.0">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <link rel="stylesheet" href="/css/academy.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,10 +37,13 @@
 
 <!-- Desktop Topnav -->
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="#home">Home</a>
+  <a href="#concept">Conept</a>
+  <a href="#membership">Memberships</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#partners">Discounts</a>
+  <a href="#youtube">YouTube</a>    
+  <a href="#faq">FAQ</a>
   <a href="javascript:void(0);" class="icon" onclick="openNav()">
     <i class="fa fa-bars"></i>
   </a>
@@ -49,16 +53,19 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="#home" onclick="closeNav()">Home</a>
+    <a href="#concept" onclick="closeNav()">Conept</a>
+	<a href="#membership" onclick="closeNav()">Memberships</a>
+	<a href="#schedule" onclick="closeNav()">Schedule</a>
+	<a href="#partners" onclick="closeNav()">Discounts</a>
+	<a href="#youtube" onclick="closeNav()">YouTube</a>    
+    <a href="#faq" onclick="closeNav()">FAQ</a>
   </div>
 </div>
 
 <!-- Page Content -->
 
-
+<section id="home" style="padding-top: 60px;">
 <div class='w3-main w3-center' style='max-width: 1500px; margin:auto;'>
 
 
@@ -66,7 +73,7 @@
 
 
 
-  <div class="w3-center hero-background">
+  <div class="w3-center hero-background" >
     <div class="w3-content">
       <div class="top-section" style="padding-top:100px; padding-left:25px; padding-right:25px;">
         <a href="https://flywithmiki.com" target="_blank">
@@ -75,7 +82,7 @@
         <img src="/img/logo.png" style="max-width:300px;">
         <h1 class="hero-title" style="color: #ffffff; font-size: 58px; font-weight:700;">Become a Pro Pilot</h1>
         <h4 class="details-description" style="color: #ffffff">Take your flight to the <span style="color: #FFC0C7;">Next Level</span></h4>
-        <a class="spaces-button w3-button w3-round-xxlarge ws-green ws-hover-green" style="margin-top: 30px;" href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fspaces.w3schools.com%2F">Get Started for Free</a>
+        <a class="spaces-button w3-button w3-round-xxlarge ws-green ws-hover-green" style="margin-top: 30px;" href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy!" target="_blank">Get Started for Free</a>
       </div>
     </div>
 
@@ -90,11 +97,12 @@
 
   </div>
 
-
+</Section>
 
 
 		
-<!-- CONCEPT SECTION NEW ----------------------------------------------------------------------->		
+<!-- CONCEPT SECTION NEW ----------------------------------------------------------------------->
+<section id="concept" >		
 <div style="margin-top: -2px; background-color: #282A35;">
   <div style="padding:40px 25px 120px 25px;position:relative;">
 
@@ -155,13 +163,14 @@
         </div>
       </div>
 	  
-        <a class="w3-button w3-teal responsive-margin w3-round-xxlarge " href="#join" style="color: #ffffff; padding: 10px; padding-left: 45px; padding-right: 45px; margin-top: 60px;">Start Your Training</a>
+        <a class="w3-button w3-teal responsive-margin w3-round-xxlarge " href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy!" target="_blank" style="color: #ffffff; padding: 10px; padding-left: 45px; padding-right: 45px; margin-top: 60px;" >Start Your Training</a>
     </div>
 	
   </div>
 </div>
-
+</Section>
 <!-- CONCEPT SECTION END ----------------------------------------------------------------------->	
+		
 		
 <div class="w3-center w3-hide-small" style="background-color: #20232b"> <!-- w3subscriptionplans section background color -->
                     <svg style="width: 100%; margin-bottom: -10px; margin-top: 0px;"  viewBox="0 0 5950 372" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +182,7 @@
 
 
 <!-- SUBSCRIPTIONS    BEGINNNING---------------------------------------------------- -->
-  
+<section id="membership">  
  <div class="w3s-subscription-plans 	 w3-center">
         <div
   id="plans-section"
@@ -256,7 +265,7 @@
           <div class="w3-center btn">
             <a
               class="outline-btn"
-              href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com%2F"
+              href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (OBSERVER membership)!" target="_blank"
             >
               Join Free
             </a>
@@ -316,7 +325,7 @@
             <a
               class="outline-btn"
               id="theo_pricing_btn"
-              href="https://billing.w3schools.com/products/spaces?frequency=monthly&amp;selectedPlan=plus-monthly"
+              href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (THEORIST monthly membership)!" target="_blank"
             >
               Unlock Theory
             </a>
@@ -376,7 +385,7 @@
             <a
               class="outline-btn"
               id="pro_pricing_btn"
-              href="https://billing.w3schools.com/products/spaces?frequency=monthly&amp;selectedPlan=plus-monthly"
+              href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (MASTER PILOT monthly membership)!" target="_blank"
             >
                Start Mastery
             </a>
@@ -397,35 +406,166 @@
     function togglePricing(e) {
       if (document.getElementById("plans-toggle-pricing").checked) {
         document.getElementById("theo_pricing").innerHTML = "CHF 275<span class='card-period'>/Year</span>";
-        document.getElementById("theo_pricing_btn").href = "https://billing.w3schools.com/products/spaces?frequency=yearly&selectedPlan=plus-yearly";
+        document.getElementById("theo_pricing_btn").href = "https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (THEORIST annual membership)!";
 		document.getElementById("pro_pricing").innerHTML = "CHF 990<span class='card-period'>/Year</span>";
-        document.getElementById("pro_pricing_btn").href = "https://billing.w3schools.com/products/spaces?frequency=yearly&selectedPlan=plus-yearly";
+        document.getElementById("pro_pricing_btn").href = "https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (MASTER PILOT annual membership)!";
+
       } else {
         document.getElementById("theo_pricing").innerHTML = "CHF 25<span class='card-period'>/Month</span>";
-        document.getElementById("theo_pricing_btn").href = "https://billing.w3schools.com/products/spaces?frequency=monthly&selectedPlan=plus-monthly";
+        document.getElementById("theo_pricing_btn").href = "https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (THEORIST monthly membership)!";
         document.getElementById("pro_pricing").innerHTML = "CHF 89<span class='card-period'>/Month</span>";
-        document.getElementById("pro_pricing_btn").href = "https://billing.w3schools.com/products/spaces?frequency=monthly&selectedPlan=plus-monthly";
+        document.getElementById("pro_pricing_btn").href = "https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (MASTER PILOT monthly membership)!";
       }
     }
   </script>	
 </div>
 	
 </div>
+</section>
 <!-- SUBSCRIPTIONS    END---------------------------------------------------- -->
 
 
+
+
+
+
+<!-- Schedule Section -->
+<section id="schedule" style="background: linear-gradient(to right, #1a1a1a, #2c2c2c); color: white; padding: 80px 25px;">
+  <div class="w3-content" style="max-width:1200px;">
+    <div class="w3-center">
+      <h2 style="font-size: 48px; font-weight: 700; margin-bottom: 10px;">📅 Yearly Program</h2>
+      <p style="font-size: 20px; color: #ccc;">A mix of theory and practice, month by month</p>
+	     <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Theory webinars (Online)</li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span><span class="material-symbols-outlined">hiking</span> Flying day</li>
+		  <li><span class="material-symbols-outlined">house_with_shield</span> Indoor session </li>
+        </ul>
+    </div>
+
+    <div class="month-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px;">
+      <!-- JANUARY -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">January</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Modern marerials</li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- FEBRUARY -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">February</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Emmagram + Weather</li>
+          <li></li>
+        </ul>
+      </div>
+
+       <!-- March -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">March</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Advanced maneuvers</li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> Advanced maneuvers</li>
+        </ul>
+      </div>
+	 <!-- April -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">April</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> XC planning</li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> Advanced maneuvers</li>
+        </ul>
+      </div>
+	   <!-- May -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">May</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Instruments</li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> Advanced maneuvers</li>
+        </ul>
+      </div>
+	   <!-- June -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">June</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li></li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> Thermalling</li>
+        </ul>
+      </div>
+
+      <!-- July -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">July</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li></li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> Thermalling</li>
+        </ul>
+      </div>
+
+      <!-- August -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">August</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li></li>
+		  <li><span class="material-symbols-outlined">flight_takeoff</span> XC</li>
+        </ul>
+      </div>
+
+      <!-- September -->
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">September</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li></li>
+          <li><span class="material-symbols-outlined">Hiking</span> Hike & Fly</li>
+        </ul>
+      </div>
+
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">October</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li></li>
+          <li><span class="material-symbols-outlined">Hiking</span> Hike & Fly</li>
+        </ul>
+      </div>
+	  
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">November</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Landing strategies</li>
+          <li><span class="material-symbols-outlined">house_with_shield</span>Rescue throwing</li>
+        </ul>
+      </div>
+	  
+      <div class="month-card" style="background-color: #333; border-radius: 16px; padding: 20px;">
+        <h3 style="color: #FFC0C7; font-size: 24px; margin-bottom: 10px;">December</h3>
+        <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+          <li><span class="material-symbols-outlined">cognition</span> Risk Assessment</li>
+          <li> </li>
+        </ul>
+      </div>
+    
+    </div>
+	
+  </div>
+  
+</section>
+
+
+ 
+<!--átmenet 
 
 <div class="w3-center w3-hide-small" style="background-color: #38445d"> 
                     <svg style="width: 100%; margin-bottom: -10px; margin-top: 0px;"  viewBox="0 0 5950 372" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 123.957V0.00038491H5950L5950 151.641C5619.44 172.921 5288.89 210.418 4958.33 247.915C4627.78 285.413 4297.22 322.91 3966.67 344.19C3305.56 384.27 2644.44 359.478 1983.33 309.895C1322.22 260.311 661.111 194.2 330.556 158.252L0 123.957Z"   fill="#20232b"/>
                     </svg>                      
 </div>
+-->
 
 
-
- 
 <!-- PARTNERS BEGIN ----------------------------------------------------------------------->
-<div class="domain-section w3-center" style="margin-top: -30px; background-color:#38445d; padding-bottom: 80px; z-index: 2 !important;">
+<section id="partners">
+<div class="domain-section w3-center" style="margin-top: -30px; background-color:#28665d; padding-bottom: 80px; z-index: 2 !important;" >
 
 
 <div style="padding:40px 25px 120px 25px;position:relative;">
@@ -482,17 +622,19 @@
 
 
  </div>
+ </section>
 <!--PARTNERS END ----------------------------------------------------------------------->
 
 <div class="w3-center w3-hide-small" style="background-color: #202020"> <!-- w3subscriptionplans section background color -->
                     <svg style="width: 100%; margin-bottom: -10px; margin-top: 0px;"  viewBox="0 0 5950 372" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 123.957V0.00038491H5950L5950 151.641C5619.44 172.921 5288.89 210.418 4958.33 247.915C4627.78 285.413 4297.22 322.91 3966.67 344.19C3305.56 384.27 2644.44 359.478 1983.33 309.895C1322.22 260.311 661.111 194.2 330.556 158.252L0 123.957Z"   fill="#38445d"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 123.957V0.00038491H5950L5950 151.641C5619.44 172.921 5288.89 210.418 4958.33 247.915C4627.78 285.413 4297.22 322.91 3966.67 344.19C3305.56 384.27 2644.44 359.478 1983.33 309.895C1322.22 260.311 661.111 194.2 330.556 158.252L0 123.957Z"   fill="#28665d"/>
                     </svg>                      
 </div>	
 
 
 
 <!--YOUTUBE SECTION-------------------->
+<section id="youtube">
 <div class="w3-center" style="background-color: #202020; padding-top:50px; padding-bottom:50px;">
     <div class="w3-content w3-row-padding">
         <div class="w3-row w3-container w3-center">
@@ -517,6 +659,7 @@
         </div>
     </div>
 </div>
+</section>
 <!--YOUTUBE SECTION-------------------->
 		
 
@@ -530,6 +673,7 @@
 
 
 <!---FAQ---------------------------------------------------------------->
+<section id="faq">
  <div class="w3-center" style="background-color: #282A35; padding-top:50px; padding-bottom:50px;">
   <div class="w3-center">
     <div class="faq w3-center w3-content">
@@ -650,7 +794,7 @@
 
     <h4 class="undertitle" style="color: #FFFFFF;">Have more questions? <a href="https://wa.me/41779766164/" target="_blank">Contact us on WhatsApp</a></h4>
     <a class="spaces-button w3-button w3-round-xxlarge ws-green ws-hover-green"
-       href="https://billing.w3schools.com/products/spaces?frequency=monthly&amp;selectedPlan=pro-monthly"
+       href="https://wa.me/41779766164?text=Hi%20Miki%2C%20I'm%20interested%20to%20join%20the%20academy (MASTER PILOT membership)!" target="_blank"
        style="padding: 10px; padding-left: 45px; padding-right: 45px; margin-top: 20px; margin-bottom: 20px;">
       Start Pilot Mastery CHF 89/Month
     </a>
@@ -741,6 +885,53 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 </script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const allNavLinks = document.querySelectorAll(".topnav a[href^='#'], .overlay-content a[href^='#']");
+  const sections = Array.from(document.querySelectorAll("section[id]"));
+
+  function activateLinkById(id) {
+    allNavLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+      const linkTarget = href.split('#')[1];
+      link.classList.toggle("active", linkTarget === id);
+    });
+  }
+
+  // Scroll-based activation
+  window.addEventListener("scroll", () => {
+    let scrollY = window.pageYOffset;
+    let currentSection = null;
+
+    sections.forEach(section => {
+      const offset = section.offsetTop - 120; // adjust to your header height
+      if (scrollY >= offset) {
+        currentSection = section;
+      }
+    });
+
+    if (currentSection) {
+      activateLinkById(currentSection.id);
+    }
+  });
+
+  // Click-based activation (and delayed update for smoother UI)
+  allNavLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      const id = this.getAttribute("href").split("#")[1];
+      if (id) {
+        activateLinkById(id);
+        setTimeout(() => activateLinkById(id), 500); // ensure update after scroll
+      }
+    });
+  });
+});
+</script>
+
+
 <!-- MENÜ Scripts -->
 
 
